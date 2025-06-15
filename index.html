@@ -5,17 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AR Architecture</title>
     <style>
-        tab {
-            background-color: black;
-            color: white;
-        }
-
         .nav {
             position: relative;
         }
-
         .nav img {
             width: 100%;
+            border: radius 0; 
+            position: relative;
+            top: 50px;
         }
         .nav b{
             color: white;
@@ -34,7 +31,15 @@
             color: white;
             background-color: black;
         }
-
+        .tab a{
+            color: black;
+        
+        }
+        .container h1 {
+            font-size: 50px;
+            color: black;
+            margin-top: 50px;
+        }
         .container {
             position: relative;
             width: fit-content;
@@ -43,8 +48,8 @@
       
         .label {
             position: absolute;
-            top: 10px;
-            left: 10px;
+            top: 100px;
+            left: 0px;
             background-color: black;
             color: white;
             padding: 8px 12px;
@@ -52,7 +57,7 @@
         }
         .label1 {
             position: absolute;
-            top: 9px;
+            top: 102px;
             left: 510px;
             background-color: black;
             color: white;
@@ -61,7 +66,7 @@
         }
         .label2 {
             position: absolute;
-            top: 9px;
+            top: 102px;
             left: 1010px;
             background-color: black;
             color: white;
@@ -70,13 +75,41 @@
         }
         .label3 {
             position: absolute;
-            top: 9px;
+            top: 95px;
             left: 1510px;
+            background-color: black;
+            color: white;
+            padding: 10px 11px;
+            font-size: 20px;
+        }
+        .label5 {
+            position: absolute;
+            top: 10px;
+            left: 510px;
             background-color: black;
             color: white;
             padding: 8px 12px;
             font-size: 20px;
         }
+        .label6 {
+            position: absolute;
+            top: 10px;
+            left: 1010px;
+            background-color: black;
+            color: white;
+            padding: 8px 12px;
+            font-size: 20px;
+        }
+        .label7{
+            position: absolute;
+            top: 5px;
+            left: 1510px;
+            background-color: black;
+            color: white;
+            padding: 10px 11px;
+            font-size: 20px;
+        }
+
         .lab{
             position: relative;
             left: 800px;
@@ -85,15 +118,17 @@
 </head>
 <p>
 <div class="tab">
-    <p><b>AR</b> ARCHITECTURE</p>
+    <p style="display: inline; position: absolute; top: 10px; left: 5px ; "><b>AR</b> ARCHITECTURE</p>
+      <a style="display: inline; position: absolute; top: 20px; right: 300px; "  >Projects</a>
+        <a style="display: inline; position: absolute; top: 20px; right:200px;" >About</a>
+        <a style="display: inline; position: absolute; top: 20px; right: 100px; " >Contact</a>
 </div>
     <div class="nav">
         <img src="https://thearchitectsdiary.com/wp-content/themes/architect-diary/assets/Images/Interior-Design-jpg.webp" alt="ARCHITECTURE">
         <a ><b>AR</b> ARCHITECTURE</a>
     </div>
+  <div class="container">
     <h1 >Projects</h1>
-
-    <div class="container">
   <div class="label">SummerHouse</div>
   <img src="https://www.w3schools.com/w3images/house5.jpg" alt="Summer House" class="image">
   <div class="label1">BrickHouse</div>
@@ -102,6 +137,17 @@
   <img src="https://www.w3schools.com/w3images/house3.jpg" alt="Renovated House" class="image">
   <div class="label3">Barn House</div>
   <img src="https://www.w3schools.com/w3images/house4.jpg" height="340" width="392px" alt="Barn House" class="image">
+</div>
+ <div class="container">
+  <!-- <div class="label4">New SummerHouse</div> -->
+   <div class="label4" style="position: absolute;top: 5px;left: 0px;background-color: black;color: white;padding: 10px 11px;font-size: 20px;;">New SummerHouse</div>
+  <img src="https://www.w3schools.com/w3images/house5.jpg" alt="New Summer House" class="image">
+  <div class="label5">New BrickHouse</div>
+  <img src="https://www.w3schools.com/w3images/house2.jpg" alt="New Brick House" class="image">
+  <div class="label6">New Renovated</div>
+  <img src="https://www.w3schools.com/w3images/house3.jpg" alt="New Renovated House" class="image">
+  <div class="label7">New Barn House</div>
+  <img src="https://www.w3schools.com/w3images/house4.jpg" height="340" width="392px" alt="New Barn House" class="image">
 </div>
 <h1>About</h1>
 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur natus amet, totam ab explicabo similique optio laboriosam perspiciatis. Officia sint, veritatis et nostrum tempora qui commodi delectus modi nesciunt rem?
@@ -115,8 +161,7 @@ Debitis obcaecati dicta, nobis quo cupiditate harum! Optio ipsa amet, nisi eveni
 Phasellus eget </p>
 enim eu lectus faucibus vestibulum. </p>
 Suspendisse sodales pellentesque elementum</p>  
-<button style="background-color: black; color: white; padding: 10px 20px;">Contact</button>
-
+<button style="background-color: black; color: white; padding: 10px 20px; text-align: center;">Contact</button>
 </div>
 </body>
 </html>
